@@ -81,16 +81,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/actor/user/UserInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SendController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controller/SendController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -505,7 +495,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/config/AuthorizeConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/actor/TestActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/actor/statistics/StatisticsWatchActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/actor/statistics/worker/DistributionActor.java" />
@@ -556,6 +545,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Receiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/develop.me" />
       </list>
     </option>
   </component>
@@ -1186,7 +1176,7 @@
       <workItem from="1475902908372" duration="8692000" />
       <workItem from="1476861147393" duration="846000" />
       <workItem from="1476942150574" duration="4650000" />
-      <workItem from="1476946929750" duration="20862000" />
+      <workItem from="1476946929750" duration="21199000" />
     </task>
     <servers />
   </component>
@@ -1223,7 +1213,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64088000" />
+    <option name="totallyTimeSpent" value="64425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1307,14 +1297,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/b.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/bdacf4f82ce9b29cd474bfde2e91eeb0ca623d28/config-1.2.1-sources.jar!/com/typesafe/config/ConfigParseOptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-297">
@@ -1775,6 +1757,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/develop.me">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
