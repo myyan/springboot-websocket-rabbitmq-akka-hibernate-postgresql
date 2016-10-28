@@ -42,5 +42,11 @@ dependencies {
 	compile('javax.inject:javax.inject:1')
 	compile('org.hibernate:hibernate-java8:5.1.0.Final')
 	compile("org.springframework.boot:spring-boot-starter-amqp")
+	compile("org.springframework.boot:spring-boot-starter-websocket")
+	compile("org.webjars:webjars-locator")
+	compile("org.webjars:sockjs-client:1.0.2")
+	compile("org.webjars:stomp-websocket:2.3.3")
+	compile("org.webjars:bootstrap:3.3.7")
+	compile("org.webjars:jquery:3.1.0")
 //	compile group: 'org.hibernate', name: 'hibernate-spatial', version: '5.0.9.Final'
 }
