@@ -1,0 +1,80 @@
+as follows , there are my faced with questions:
+first question->  how to push a new branch to remote repository
+
+you should create a new branch in local repository
+
+like this  
+
+git checkout -b develop
+
+as a result, your local repository will add a new branch called at "develop"
+
+and next you should create someting 
+
+then add to staged directory
+
+before last  commit
+
+last but not least
+
+git push -u origin develop
+
+
+
+second question -> how to push local repository to specific remote repository
+
+first  you should do like this:
+
+in remote repository  ,you create a new repo ,named as you like
+
+then in local repository  you should git init
+
+then it will init a repository automatically
+
+then git add .
+
+will add all current directory all files recursively
+
+then you should git commit -m "some thing"
+
+you should add a remote repo call at "origin"
+
+like this:
+
+git remote add origin https://github.com/myyan/redis.git
+
+at last 
+
+git push -u origin master
+
+next i will explain  -u  and origin means
+
+-u is upstream   it will refer to the main repo that other people will be pulling from
+
+e.g. your github repo
+
+several minitus ago,
+
+i add a remote repo
+
+it called at origin
+
+yeah this is our remote repo 
+
+-u will automatically sets that upstream for you 
+
+linking you repo to a central one.
+
+that way , in the future , git knows where you want to push to  and where you want to pull from
+
+so you can use got pull or git push without any arguments.
+
+a little bit down 
+
+http://mislav.net/2010/07/git-tips/
+
+reference this article 
+
+http://stackoverflow.com/questions/5561295/what-does-git-push-u-mean?answertab=oldest#tab-top
+
+http://stackoverflow.com/questions/5561295/what-does-git-push-u-mean
