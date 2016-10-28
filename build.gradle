@@ -1,0 +1,46 @@
+buildscript {
+	ext {
+		springBootVersion = '1.4.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+
+jar {
+	baseName = 'userauthorizetest'
+	version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile('org.springframework.boot:spring-boot-devtools')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.projectlombok:lombok:1.16.8')
+	runtime('org.postgresql:postgresql')
+	compile('com.typesafe:config:1.2.1')
+	compile('org.bitbucket.cowwoc:diff-match-patch:1.1')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+	compile('com.typesafe.akka:akka-actor_2.11:2.4.8')
+	compile('javax.inject:javax.inject:1')
+	compile('org.hibernate:hibernate-java8:5.1.0.Final')
+	compile("org.springframework.boot:spring-boot-starter-amqp")
+//	compile group: 'org.hibernate', name: 'hibernate-spatial', version: '5.0.9.Final'
+}
