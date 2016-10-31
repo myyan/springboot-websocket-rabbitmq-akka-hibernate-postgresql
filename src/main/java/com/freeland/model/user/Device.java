@@ -21,6 +21,6 @@ public class Device {
     private String name;
 
     @OneToMany(mappedBy = "device")
-    @JsonIgnore
+//    @JsonIgnore
     private Set<App> apps;
 }
