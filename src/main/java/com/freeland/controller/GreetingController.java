@@ -24,15 +24,5 @@ public class GreetingController {
         return new Greeting("Hello" + message.getName());
     }
 
-    @RequestMapping("/send")
-    @ResponseBody
-    public Result result(@RequestParam(name = "topic") String topic,
-                         @RequestParam(name = "content") String content) {
-        if (content.equals("forward")) {
-            throw new IllegalArgumentException();
-        }
-        return Result.builder().message("ok").code(200).build();
-    }
-
 
 }
