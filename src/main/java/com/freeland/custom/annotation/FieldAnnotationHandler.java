@@ -8,10 +8,8 @@ import java.util.Arrays;
  */
 public class FieldAnnotationHandler {
     public void handle(Object object) throws Exception {
-        System.out.println("entry 1");
         Field[] fields = object.getClass().getFields();
         for (Field field : fields) {
-            System.out.println("entry 2");
             if (field.isAnnotationPresent(MyField.class)){
                 MyField myField = field.getAnnotation(MyField.class);
                 int maxLength = myField.maxLength();
