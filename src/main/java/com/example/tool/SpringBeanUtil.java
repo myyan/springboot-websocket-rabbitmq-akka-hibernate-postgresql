@@ -7,8 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by hanxiao on 2016/8/23.
- */
-@Configuration
+ */@Configuration
 public class SpringBeanUtil implements ApplicationContextAware {
 
     private static ApplicationContext ctx;

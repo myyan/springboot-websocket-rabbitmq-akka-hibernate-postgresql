@@ -2,25 +2,54 @@ package com.example;
 //
 
 
+import akka.actor.ActorRef;
+import akka.actor.ActorSystem;
+import akka.actor.Props;
+import com.example.actor.ActorA;
+import com.example.actor.Listener;
+import com.example.actor.Receiver;
+import com.typesafe.config.ConfigFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import java.io.IOException;
-
-import static org.junit.Assert.assertTrue;
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = UserauthorizetestApplication.class)
 @WebAppConfiguration
 public class UserauthorizetestApplicationTests {
 
-	@Test
-	public void contextLoads() throws IOException {
-		assertTrue(true);
-	}
+    @Test
+    public void contextLoads() throws Exception {
+
+    }
+
+    @Test
+    public void test() {
+        int number = 10;
+        print(10);
+        number = number << 1;
+        print(number);
+
+        number = number >> 1;
+        System.out.println(number);
+    }
+
+    public void print(int num) {
+        System.out.println(Integer.toBinaryString(num));
+    }
+
+    @Test
+    public void test2() {
+        ActorSystem actorSystem = ActorSystem.create("system", ConfigFactory.load("application.conf"));
+        ActorRef receiver = actorSystem.actorOf(Props.create(Receiver.class),"receiver");
+        for (int i = 0; i < 10; i++) {
+            actorSystem.actorOf(Props.create(ActorA.class),"actor"+i);
+        }
+        ActorRef listener = actorSystem.actorOf(Listener.props(receiver).withMailbox("priority-mailbox"),"listener");
+
+    }
 
 }
 
